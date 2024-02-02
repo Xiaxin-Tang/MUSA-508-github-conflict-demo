@@ -15,6 +15,8 @@ output:
 ---
 
 ## Setup 
+Lets see what gonna happened!
+
 First let's set up our chunk options and required libraries. This will minimize clutter and remove unnecessary messages and warnings. 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
@@ -30,6 +32,12 @@ library(sf)
 library(mapview)
 
 ```
+
+```{r}
+## Let's add a 'Hello World!'
+print("Hello World!")
+```
+
 
 ## Load data
 Next we load our dataset from OpenDataPhilly.org. This dataset is a GeoJSON of all the parks in Philadelphia. We use sf::st_read() to read in spatial data like this.
